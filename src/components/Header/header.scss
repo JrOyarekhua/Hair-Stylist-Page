@@ -1,3 +1,29 @@
-@import url('/src/Styles/_variables.scss');
-@import url(/src/fonts/_fonts.scss);
+@import url('/src/components/_variables.scss');
+@import url('/src/components/_fonts.scss');
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+// md
+@media (min-width: 768px){
+    .header-list{
+        display: flex;
+        gap: 1rem;
+    }
+}
+// lg
+@media (min-width: 1024px){
+   
+}
+// xl
+@media (min-width: 1280px){
+   
+}
+// 2xl
+@media (min-width: 1536px){
+    
+}

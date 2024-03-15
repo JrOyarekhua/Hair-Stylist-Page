@@ -1,0 +1,92 @@
+
+$customPink: rgb(238, 180, 179);
+$customGray: rgb(109, 104, 117);
+$customViolet: rgb(50, 10, 40);
+$customDarkPurple: rgb(50, 10, 40);
+$customBlack: rgb(13, 22, 11);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+// add a container class that resizes as media queries are touched 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid red;
+}
+// xs
+@media (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+}
+// sm
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+// md
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+// lg
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+}
+// xl
+@media (min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+}
+// 2xl
+@media (min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
+}
+
+
+
+
+// @media (min-width: 475px){
+    
+// }
+// // sm
+// @media (min-width: 640px){
+    
+// }
+// // md
+// @media (min-width: 768px){
+    
+// }
+// // lg
+// @media (min-width: 1024px){
+   
+// }
+// // xl
+// @media (min-width: 1280px){
+   
+// }
+// // 2xl
+// @media (min-width: 1536px){
+    
+// }

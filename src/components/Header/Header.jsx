@@ -1,32 +1,52 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faX } from '@fortawesome/free-solid-svg-icons'
-import React, { useState } from 'react';
+import './header.css'
+import React, { useState,useEffect } from 'react';
+
 function Header() {
-  
-  const [clicked,setClicked] = useState(false)
+  const [show,setShow] = useState(false)
+
   function handleIconClick(){
     // set clicked to be true
-    setClicked(!clicked)
+    setShow(!show)
   }
+
+  function handleXClick(){
+    setShow(!show)
+  }
+  
+  useEffect(()=>{
+    // callback to handle resize
+    function handleResize(){
+      if(window.innerWidth > 768){
+        setShow(true)
+      }else{
+        setShow(false)
+      }
+    }
+    // event listener to watch the size of the window
+    window.addEventListener('resize',handleResize)
+    return() => {
+      window.removeEventListener('resize',handleResize)
+    }
+  },[])
+  
+
   return(
-    <header className='header'>
+     <header className='header container'>
       <h1>logo</h1>
       <nav className='header-nav'>
-      {!clicked && <FontAwesomeIcon icon={faBars} onClick={handleIconClick} className='nav-icon' />}
-      {clicked && 
+      {!show && <FontAwesomeIcon icon={faBars} onClick={handleIconClick} size="xl" />}
+      {show && 
       <ul className='header-list'>
-          <FontAwesomeIcon icon={faX} className='nav-icon-X'/>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Services</li>
-          <li>Testimonials</li>
+          {window.innerWidth < 768 && <FontAwesomeIcon icon={faX} className='nav-icon-X' onClick={handleXClick}/>}
+          <li><a href="#home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>}
-       
       </nav>
-      <section>
-        <h1>LauriiKayStylez</h1>
-        <p>Unleash your inner beauty one Strand at a time</p>
-      </section>
     </header>
   )
   

@@ -1,2 +1,15 @@
-@import url("/src/Styles/_variables.scss");
-@import url(/src/fonts/_fonts.scss);/*# sourceMappingURL=header.css.map */
+@import url("/src/components/_variables.scss");
+@import url("/src/components/_fonts.scss");
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=header.css.map */
