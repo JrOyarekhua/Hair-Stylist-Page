@@ -1,0 +1,40 @@
+@import url(/src/pages/_variables.scss);
+@import url(/src/pages/_variables.scss);
+
+.hero {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  position: absolute;
+  z-index: 0;
+  button {
+    padding: 0.25rem;
+    color: white;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.hero-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.hero-subtitle {
+  font-size: 0.8rem;
+}
+
+.hero-learn-btn {
+  border: 1px solid white;
+  background-color: transparent;
+}
+.hero-book-btn {
+  border: 2px solid black;
+  background-color: black;
+}

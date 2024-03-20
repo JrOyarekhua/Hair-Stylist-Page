@@ -1,0 +1,51 @@
+@import url("/src/pages/_variables.scss");
+@import url("/src/pages/_fonts.scss");
+
+$primaryPink: #f3c3c3;
+$secondaryTan: #f4e5c3;
+$grey: #334155;
+
+body {
+  background-color: $primaryPink;
+}
+
+.hero-background {
+  height: 100vh;
+  background-image: url(/src/images/hero-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: none;
+}
+
+.header ul li a {
+  font-weight: 700;
+}
+
+.header-nav {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+// md
+@media (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 1rem;
+  }
+}
+// lg
+@media (min-width: 1024px) {
+}
+// xl
+@media (min-width: 1280px) {
+}
+// 2xl
+@media (min-width: 1536px) {
+}
