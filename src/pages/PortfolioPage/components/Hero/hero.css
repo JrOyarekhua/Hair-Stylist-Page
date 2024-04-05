@@ -19,14 +19,19 @@
   margin: 0rem 0.5rem;
   cursor: pointer;
 }
+.hero span {
+  margin-top: -0.5;
+}
 
 .hero-title {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .hero-subtitle {
   font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: -0.7rem;
 }
 
 .hero-learn-btn {
@@ -37,4 +42,16 @@
 .hero-book-btn {
   border: 2px solid black;
   background-color: black;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .hero button {
+    padding: 0.5rem;
+  }
 }/*# sourceMappingURL=hero.css.map */

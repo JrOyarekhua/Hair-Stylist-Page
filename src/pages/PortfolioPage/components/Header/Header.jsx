@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX, faHouse } from "@fortawesome/free-solid-svg-icons";
 import "./header.css";
 import { useState } from "react";
 
 function Header() {
   const [hidden, setHidden] = useState(true);
+
   return (
     <header className="header container">
       {/* logo goes here */}
@@ -27,7 +28,13 @@ function Header() {
             }}
           />
           <li className="header-list-items">
-            <a href="#home">Home</a>
+            <span>
+              <FontAwesomeIcon
+                icon={faHouse}
+                className="list-icon house-icon"
+              />
+              <a href="#home">Home</a>
+            </span>
           </li>
           <li>
             <a href="#About">About</a>
