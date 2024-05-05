@@ -36,16 +36,13 @@ body {
   font-size: medium;
   transition: color 250ms linear;
 }
-.header ul li a:hover {
-  color: white;
-}
 
 .header-nav {
   width: 60vw;
   min-height: 100vh;
   position: fixed;
-  background-color: white;
-  z-index: 1;
+  background-color: #f3c3c3;
+  z-index: 100;
   top: 0;
   right: 0;
   box-shadow: -3px 0px 5px black;
@@ -63,6 +60,11 @@ body {
   top: 5%;
   right: 10%;
   cursor: pointer;
+}
+
+span {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -90,7 +92,7 @@ body {
   .header-icon {
     display: none;
   }
-  .list-icon {
+  .header-list span {
     display: none;
   }
 }/*# sourceMappingURL=header.css.map */

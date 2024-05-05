@@ -15,14 +15,24 @@ function Portfolio() {
   return (
     <section className="portfolio container">
       <div className="portfolio-text">
-        <h2>Portfolio</h2>
-        <p>browse through my stunning selections</p>
+        <p>Portfolio</p>
+        <h2>browse my stunning selections</h2>
       </div>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={15}
-        slidesPerView={3}
-        slidesPerGroup={4}
+        slidesPerView={2}
+        slidesPerGroup={2}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          1064: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+        }}
         navigation={{
           prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
@@ -39,6 +49,7 @@ function Portfolio() {
           );
         })}
       </Swiper>
+
       <div className="slider-controller">
         <div className="swiper-button-prev">
           <FontAwesomeIcon icon={faCircleArrowLeft} />

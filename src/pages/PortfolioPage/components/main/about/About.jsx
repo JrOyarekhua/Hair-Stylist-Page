@@ -8,32 +8,13 @@ function About() {
       </div>
       <div className="about-content">
         <p>
-          "Welcome! I'm Kaylee, a seasoned hairstylist with a passion for
-          crafting beautiful and confident looks. With years of experience in
-          the industry, I've dedicated myself to mastering the art of
-          hairstyling. Through countless hours of practice and dedication, I've
-          curated an extensive portfolio of stunning hairstyles that showcase my
-          expertise and creativity.
-        </p>
-        <p>
-          My journey in the world of hair has been fueled by a deep love for the
-          craft, and this passion shines through in every client interaction.
-          When you sit in my chair, you're not just receiving a haircut or
-          styling session—you're experiencing personalized care and attention
-          tailored to your unique needs and preferences.
-        </p>
-        <p>
-          My goal is to not only leave you looking and feeling your best but
-          also to ensure that you feel pampered and well taken care of
-          throughout the entire styling process. Whether you're looking for a
-          bold new look, a subtle change, or simply some expert advice, I'm here
-          to make your hairstyling experience unforgettable.
-        </p>
-        <p>
-          {" "}
-          Thank you for considering me as your hairstylist. I look forward to
-          the opportunity to work with you and help bring your hair dreams to
-          life!"
+          "Hi there! I'm Kaylee, a skilled hairstylist passionate about creating
+          beautiful looks. With years of experience and a love for the craft,
+          I've honed my skills and built an extensive portfolio. When you choose
+          me, you're not just getting a haircut; you're getting personalized
+          attention and care tailored to your needs. My goal is to make your
+          hairstyling experience unforgettable, leaving you looking and feeling
+          your best. Thanks for considering me—I can't wait to work with you!"
         </p>
       </div>
     </section>
